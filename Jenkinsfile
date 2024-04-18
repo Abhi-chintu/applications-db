@@ -1,6 +1,6 @@
 node("testnode") {
     stage('Clone sources') {
-        git branch: 'master', url: 'https://github.com/Abhi-chintu/applications-db.git'
+        git branch: 'sourcebranch', url: 'https://github.com/Abhi-chintu/applications-db.git'
     }
 
     stage('Build') {
