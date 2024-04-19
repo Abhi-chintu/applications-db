@@ -18,7 +18,7 @@ def insertemployee():
         salary = details['salary']
         my_database.execute("INSERT INTO employee(empno, empname, salary) VALUES (%s, %s, %s)", (empno, empname, salary))
         mysqldb.commit()
-        return 'Employee successfullly created kindly check it'
+        return 'Employee successfullly created kindly check'
     return render_template('insertemployee.html')
 
 @app.route('/listofemployees', methods=['GET'])
