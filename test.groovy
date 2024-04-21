@@ -1,4 +1,6 @@
-def build(){
-echo "this is build stage"
+def build() {
+    echo "This is the build stage"
 }
- return this
+
+build() 
+
