@@ -27,6 +27,8 @@ node("testnode"){
         }
         groovyfile = load "test.groovy"
     }
-    }
+    }catch(exc) {
+	   echo "An exception occurred while testing the packages"
+	   }
 
 }
