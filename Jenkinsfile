@@ -1,6 +1,6 @@
 node("testnode") {
     stage('Clone sources') {
-        checkout([$class: 'GitSCM', branches: [[name: 'firstbranch']], userRemoteConfigs: [[url: 'https://github.com/Abhi-chintu/applications-db.git']]])
+        checkout([$class: 'GitSCM', branches: [[name: '*/master']], userRemoteConfigs: [[url: 'https://github.com/Abhi-chintu/applications-db.git']]])
     }
 
     stage('Build') {
